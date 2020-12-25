@@ -14,3 +14,11 @@ input:invalid+span::after{
 input:valid+span::after{
     content:'✓';
 }
+
+.main-container{
+    align-items: center;
+    padding-left:20%;
+    padding-top:10%;
+    letter-spacing: 1px;
+}
+
