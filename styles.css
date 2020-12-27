@@ -18,7 +18,8 @@ input:valid+span::after{
 .main-container{
     align-items: center;
     padding-left:20%;
-    padding-top:10%;
+    padding-top:5%;
+    padding-right:20%;
     letter-spacing: 1px;
 }
 
