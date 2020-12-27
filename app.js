@@ -15,11 +15,11 @@ function clickHandler() {
     if (year === '' || month === '' || day === '') {
         alert("Invalid or Empty input");
     } else {
-
+        
         var pallinResult = checkPallinInAllCombinations(year, month, day, ndate);
     }
     if (pallinResult == false) {
-        //outputref.innerText = "Oops! Your birthdate is not a pallindrome number!";
+       
         ndate = true;
         var user_ip_date = new Date(inputdate);
         var next_dt = new Date(user_ip_date);
