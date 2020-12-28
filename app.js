@@ -25,7 +25,7 @@ function clickHandler() {
         var user_ip_date = new Date(inputdate);
         var next_dt = new Date(user_ip_date);
         var check_n_pallin = false;
-        op2ref.innerText = "Oops! Your Birthdate is not Pallindrome!\n";
+        op2ref.innerText = "Oops! Your Birthdate is not Palindrome!\n";
 
         while (check_n_pallin == false) {
             next_dt.setDate(next_dt.getDate() + 1);
@@ -39,7 +39,7 @@ function clickHandler() {
 
         }
         var diff_birthdate_nextdt = calculateDifference(user_ip_date,next_dt);
-        op1ref.innerText = "Your Birthdate is "+ diff_birthdate_nextdt+ " days away from the next Pallindrome date.";
+        op1ref.innerText = "Your Birthdate is "+ diff_birthdate_nextdt+ " days away from the next Palindrome date.";
 
 
 
@@ -80,18 +80,18 @@ function checkPallinInAllCombinations(year, month, day, ndate) {
         
         if (pallindromeResult == true && flag == 0) {
             if (ndate == false) {
-                outputref.innerText = displayPatterns[i] + "=" + display_reverseDate + " Yay!\n\nUsing the combination: " + nameOfPatterns[i] + " your Birthdate is proclaimed as Pallindrome!\nFeel free to share this with your friends!";
+                outputref.innerText = displayPatterns[i] + "=" + display_reverseDate + " Yay!\n\nUsing the combination: " + nameOfPatterns[i] + " your Birthdate is proclaimed as Palindrome!\nFeel free to share this with your friends!";
                 flag += 1;
             } else {
-                outputref.innerText = "Using the combination: " + nameOfPatterns[i] + " the next nearest date: "+displayPatterns[i]+" is Pallindrome!";
+                outputref.innerText = "Using the combination: " + nameOfPatterns[i] + " the next nearest date: "+displayPatterns[i]+" is Palindrome!";
                 flag += 1;
             }
         } else if (pallindromeResult == true && flag > 0) {
             var para = document.createElement("p");
             if (ndate == false) {
-                var data = "Next combination for which your Birthdate is Pallindrome: " + nameOfPatterns[i] + "\n" + displayPatterns[i] + "=" + display_reverseDate;
+                var data = "Next combination for which your Birthdate is Palindrome: " + nameOfPatterns[i] + "\n" + displayPatterns[i] + "=" + display_reverseDate;
             } else {
-                var data = "Next combination for which the nearest date is Pallindrome: " + nameOfPatterns[i] + "\n" + displayPatterns[i] + "=" + display_reverseDate;
+                var data = "Next combination for which the nearest date is Palindrome: " + nameOfPatterns[i] + "\n" + displayPatterns[i] + "=" + display_reverseDate;
             }
             para.innerText = data;
             outputref.appendChild(para);
